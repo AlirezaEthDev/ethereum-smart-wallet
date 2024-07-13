@@ -5,7 +5,7 @@ An Ethereum smart contract wallet that allows users to securely deposit, hold, a
 The Ethereum Smart Wallet project demonstrates the implementation of a basic smart contract wallet on the Ethereum blockchain. It enables users to:
   * Deposit and hold Ether (ETH) in the smart contract
   * Transfer ETH from the smart contract to other Ethereum addresses
-  * Implement custom logic and rules around transactions using Solidity
+  * Implement custom logic and rules around transactions using Solidity like conditional transactions
 
 # Features
   * Non-custodial: Users maintain full control over their funds and private keys
