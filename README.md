@@ -1,23 +1,66 @@
-# Ethereum Smart Wallet
-An Ethereum smart contract wallet that allows users to securely deposit, hold, and transfer ETH with programmable logic.
+## Foundry
 
-# Overview
-The Ethereum Smart Wallet project demonstrates the implementation of a basic smart contract wallet on the Ethereum blockchain. It enables users to:
-  * Deposit and hold Ether (ETH) in the smart contract
-  * Transfer ETH from the smart contract to other Ethereum addresses
-  * Implement custom logic and rules around transactions using Solidity like conditional transactions
+**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
-# Features
-  * Non-custodial: Users maintain full control over their funds and private keys
-  * Programmable: The wallet's behavior can be customized using Solidity smart contract code
-  * Recoverable: Users can set up recovery options in case they lose access to their wallet
-  * Secure: Smart contract wallets provide a more secure alternative to externally owned accounts (EOAs) by eliminating the need for private keys
+Foundry consists of:
 
-# Usage
-  1) Connect your Ethereum wallet to the dApp.
-  2) Deposit ETH into the smart contract wallet.
-  3) Transfer ETH from the smart contract to other Ethereum addresses.
-  4) Customize the smart contract logic as needed.
+-   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
+-   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
+-   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
+-   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
 
-# License
-This project is licensed under the MIT License.
+## Documentation
+
+https://book.getfoundry.sh/
+
+## Usage
+
+### Build
+
+```shell
+$ forge build
+```
+
+### Test
+
+```shell
+$ forge test
+```
+
+### Format
+
+```shell
+$ forge fmt
+```
+
+### Gas Snapshots
+
+```shell
+$ forge snapshot
+```
+
+### Anvil
+
+```shell
+$ anvil
+```
+
+### Deploy
+
+```shell
+$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+```
+
+### Cast
+
+```shell
+$ cast <subcommand>
+```
+
+### Help
+
+```shell
+$ forge --help
+$ anvil --help
+$ cast --help
+```
